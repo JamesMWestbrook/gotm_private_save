@@ -1,15 +1,13 @@
 extends Node
 
-
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
+# https://gotm.io/dairyfreelemons/test
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	var config = GotmConfig.new()
 # Replace the empty string with your project key.
+	#Essential- put your own project key in here
 	config.project_key = "authenticators/YYl11yIWQ8jg2Twdgh3B"
 	config.beta_unsafe_force_global_contents = true
 	Gotm.initialize(config)
